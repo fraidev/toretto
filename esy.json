@@ -1,11 +1,10 @@
 {
-    "name": "hello",
+    "name": "toretto",
     "esy": {
         "build": "dune build -p #{self.name}",
         "release": {
             "bin": [
-                "deku-cli",
-                "deku-node"
+                "toretto"
             ]
         },
         "buildEnv": {
@@ -14,10 +13,10 @@
     },
     "license": "MIT",
     "scripts": {
-        "start": "esy x hello.exe",
+        "start": "esy x toretto.exe",
         "watch": "esy b dune build --watch",
-        "build": "dune build -p hello",
-        "test": "dune exec -p hello -- ./test.sh",
+        "build": "dune build -p toretto",
+        "test": "dune exec -p toretto -- ./test.sh",
         "format": "dune build @fmt --auto-promote",
         "build_static": "dune build --profile=static --release"
     },
